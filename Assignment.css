@@ -4,6 +4,7 @@
 
 /*width, margin, font, padding*/
 body{
+    width: auto;
     max-width: fit-content;
     margin: auto;
     font: 18px Arial; 
@@ -15,7 +16,7 @@ header h1,footer {
     border: 3px solid black;
     border-radius: 10px ;
     margin: 3px;
-    padding: 5px;
+    padding: 6px;
 }
 
 /*font variant*/
@@ -35,7 +36,8 @@ footer {
 
 /*change the font size*/
 footer p{
-    font-size: 15px;  
+    font-size: 15px; 
+    color: grey; 
 }
 
 /*float, width, padding, margin, text-align*/
@@ -92,8 +94,7 @@ section q{
 /*list style type to remove bullet points, margin, padding*/
 ul li{
     list-style-type: none;
-    margin: 0%;
-    padding: 0%;
+    line-height: 1.5lh;
 }
 
 /*text decoration to remove underline*/
