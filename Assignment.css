@@ -1,0 +1,110 @@
+/*Name: Pratham Bhatiya
+  Student Number: 8960915
+*/
+
+/*width, margin, font, padding*/
+body{
+    max-width: fit-content;
+    margin: auto;
+    font: 18px Arial; 
+    padding: auto;
+}
+
+/*Border*/
+header h1,footer {
+    border: 3px solid black;
+    border-radius: 10px ;
+    margin: 3px;
+    padding: 5px;
+}
+
+/*font variant*/
+h1,h2{
+    font-variant: small-caps;
+}
+
+/*Text align*/
+header h1 {
+    text-align: center;   
+}
+
+/*Removes effect of float*/
+footer {
+    clear: both;
+}
+
+/*change the font size*/
+footer p{
+    font-size: 15px;  
+}
+
+/*float, width, padding, margin, text-align*/
+ main{
+    float: left;
+    text-align: justify;
+    width: 60%;
+    padding: 3px;
+    margin: 15px;
+ }
+
+ /*float, width, padding, margin*/
+ aside{
+    float: right;
+    width: 30%;
+    padding: 3px;
+    margin: 15px;
+ }
+
+/*float,position,margin,content align*/
+aside h2 {
+    float: right;
+    position: absolute;
+    right: 70px;
+    margin-right: 10px;
+}
+
+/*float,position,margin,content align*/
+aside ul{
+    float: right;
+    position: absolute;
+    right:180px;
+    margin-top:60px;
+}
+
+/*Image border*/
+figure img{
+    border: 3px solid black;
+}
+
+/*font variant, font weight*/
+figure figcaption{
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/*font family, font style, font size*/
+section q{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/*list style type to remove bullet points, margin, padding*/
+ul li{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*text decoration to remove underline*/
+a{
+    text-decoration: none;
+}
+
+/*to change color of links while hovering*/
+a:hover{
+    color: brown;
+}
+
+ 
+
