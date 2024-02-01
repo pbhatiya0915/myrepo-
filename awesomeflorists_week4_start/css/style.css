@@ -1,0 +1,42 @@
+body{
+    width: 75%;
+    margin: auto;
+    border: 2PX solid black;
+}
+
+header h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+}
+nav{
+    background-color: bisque;
+    text-align: center;
+}
+nav a{
+    color: brown;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 80px;  
+}
+main{
+    margin: 5px;
+    padding: 5px;
+}
+main img{
+    width: 100%;    
+}
+main a{
+    text-decoration: underline;
+}
+footer{
+    text-align: center;
+    background-color: bisque;
+    color: brown;
+    margin: 5px;
+    padding: 5px;   
+}
+
+
