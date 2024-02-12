@@ -1,0 +1,70 @@
+/*Name: Pratham Bhatiya
+  Student Number: 8960915
+*/
+
+body {
+  font: 15px Arial;
+  background-color: hsla(162, 76%, 56%, 0.6);
+  height: 100vh;
+  width: 100vw;
+}
+
+.structural {
+  border: 5px solid black;
+  margin: 25px;
+  padding: 10px;
+}
+
+h2 {
+  color: #703;
+  font-size: 20px;
+}
+
+main {
+  float: left;
+  width: 68%;
+  padding: 2px;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  padding: 2px;
+}
+
+footer {
+  clear: both;
+}
+
+#para1 {
+  font-size: 15px;
+  color: rgb(100,100,100)
+}
+
+#para2 {
+  font-size: 15px;
+  color: rgb(255,0,0)
+}
+.structural header {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.structural main {
+  background-color: hsl(120, 100%, 50%);
+}
+
+.structural aside {
+  background-color: hsl(240, 100%, 50%);
+}
+
+.structural footer {
+  background-color: hsl(45, 100%, 50%);
+}
+
+a:hover ::before {
+  color: #703;
+}
+
+footer p {
+  font-size: small;
+}
