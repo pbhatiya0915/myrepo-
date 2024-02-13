@@ -98,9 +98,9 @@ ul li{
 }
 
 /*text decoration to remove underline*/
-a{
+li > a{
     text-decoration: none;
-}
+}   
 
 /*to change color of links while hovering*/
 a:hover{
