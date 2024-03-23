@@ -1,0 +1,300 @@
+/*Name: Pratham Bhatiya
+  Student Number: 8960915
+*/
+
+/*width, margin, font, padding*/
+body{
+    width: 100%; /* Changed from auto to 100% */
+    margin: 0; /* Changed from auto to 0 */
+    font-family: Arial, sans-serif; /* Changed from 18px Arial to Arial, sans-serif */
+    padding: 0; /* Changed from auto to 0 */
+}
+
+/*Border*/
+header h1,footer {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 6px;
+}
+
+/*font variant*/
+h1,h2{
+    text-transform: uppercase; /* Changed from font-variant: small-caps to text-transform: uppercase */
+}
+
+/*Text align*/
+header h1 {
+    text-align: center;   
+}
+
+/*Removes effect of float*/
+footer {
+    clear: both;
+}
+
+/*change the font size*/
+footer p{
+    font-size: 15px; 
+    color: grey; 
+}
+
+/*float, width, padding, margin, text-align*/
+ main{
+    float: left;
+    text-align: justify;
+    width: 60%; /* Increased width from 60% to 65% */
+    padding: 15px; /* Increased padding from 3px to 15px */
+    margin: 15px;
+ }
+
+ /*float, width, padding, margin*/
+ aside{
+    float: right;
+    width: 30%;
+    padding: 15px; /* Increased padding from 3px to 15px */
+    margin: 15px;
+ }
+
+/*float,position,margin,content align*/
+aside h2 {
+    margin-right: 10px;
+}
+
+/*float,position,margin,content align*/
+aside ul{
+    margin-top: 60px;
+    margin-right: 10px; /* Changed from right:180px to margin-right: 10px */
+}
+
+/*Image border*/
+figure img{
+    border: 3px solid black;
+}
+
+/*font variant, font weight*/
+figure figcaption{
+    font-weight: bold;
+    text-transform: uppercase; /* Changed from font-variant: small-caps to text-transform: uppercase */
+}
+
+/*font family, font style, font size*/
+section q{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/*list style type to remove bullet points, margin, padding*/
+ul li{
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+/*text decoration to remove underline*/
+li > a{
+    text-decoration: none;
+}   
+
+/*to change color of links while hovering*/
+a:hover{
+    color: brown;
+}
+
+/* Style for main navigation */
+
+.structural {
+    width: 100%;
+    background-color: rgb(255, 153, 0);
+    margin: 1rem 0;
+    float: inline-start;
+}
+
+nav {
+    padding: 10px;
+    text-align: center; /* Center the navigation links */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Display the list items inline */
+    position: relative;
+    width: 20%; /* Let the width adjust automatically based on content */
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px 20px; /* Increase padding for spacing */
+}
+
+/* Corrected styling for sub-menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: blanchedalmond;
+    border: 1px solid #000;
+    z-index: 1000;
+    width: 100%;
+    text-align: center; /* Center the sub-menu links */
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    display: block;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li a:hover {
+    color: cornflowerblue;
+}
+
+/*css for form elements*/
+
+.structural {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* CSS for table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Gap between images */
+    position: relative; /* Required for absolute positioning of clip art */
+  }
+  
+  .gallery figure {
+    margin: 0;
+    padding: 0;
+    position: relative; /* Required for absolute positioning of clip art */
+  }
+  
+  .gallery img {
+    width: 100%; /* Make images fill their respective grid cells */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  .gallery figcaption {
+    text-align: center;
+    position: absolute; /* Position captions relative to their parent figures */
+    bottom: 0; /* Align captions to the bottom of the figure */
+    left: 0; /* Center captions horizontally */
+    width: 100%; /* Make captions span the entire width of the figure */
+    padding: 10px; /* Add some padding for better readability */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  }
+  
+  /* Add clip art */
+  .gallery figure::after {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position the clip art absolutely */
+    top: 0; /* Position clip art at the top of the figure */
+    left: 0; /* Position clip art at the left of the figure */
+    width: 100%; /* Make clip art cover the entire figure */
+    height: 100%; /* Make clip art cover the entire figure */
+    background-image: url('clipart.png'); /* Replace 'clipart.png' with the path to your clip art image */
+    background-size: cover; /* Make clip art cover the entire space */
+    opacity: 0.3; /* Adjust opacity of clip art */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video {
+    width: 50%; /* Adjust as needed */
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
