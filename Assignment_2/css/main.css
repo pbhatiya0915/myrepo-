@@ -4,10 +4,10 @@
 
 /*width, margin, font, padding*/
 body{
-    width: 100%; /* Changed from auto to 100% */
-    margin: 0; /* Changed from auto to 0 */
-    font-family: Arial, sans-serif; /* Changed from 18px Arial to Arial, sans-serif */
-    padding: 0; /* Changed from auto to 0 */
+    width: 100%; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    padding: 0; /
 }
 
 /*Border*/
@@ -20,7 +20,7 @@ header h1,footer {
 
 /*font variant*/
 h1,h2{
-    text-transform: uppercase; /* Changed from font-variant: small-caps to text-transform: uppercase */
+    font-variant: small-caps; 
 }
 
 /*Text align*/
@@ -43,8 +43,8 @@ footer p{
  main{
     float: left;
     text-align: justify;
-    width: 60%; /* Increased width from 60% to 65% */
-    padding: 15px; /* Increased padding from 3px to 15px */
+    width: 60%; 
+    padding: 15px; 
     margin: 15px;
  }
 
@@ -52,8 +52,11 @@ footer p{
  aside{
     float: right;
     width: 30%;
-    padding: 15px; /* Increased padding from 3px to 15px */
+    padding: 15px; 
     margin: 15px;
+ }
+ .structure{
+    border: black solid 2px;
  }
 
 /*float,position,margin,content align*/
@@ -63,8 +66,8 @@ aside h2 {
 
 /*float,position,margin,content align*/
 aside ul{
-    margin-top: 60px;
-    margin-right: 10px; /* Changed from right:180px to margin-right: 10px */
+    margin-top: 0px;
+    margin-right: 10px; 
 }
 
 /*Image border*/
@@ -75,9 +78,12 @@ figure img{
 /*font variant, font weight*/
 figure figcaption{
     font-weight: bold;
-    text-transform: uppercase; /* Changed from font-variant: small-caps to text-transform: uppercase */
+    text-transform: uppercase; 
 }
 
+blockquote {
+    margin-inline-start: 0px;
+}
 /*font family, font style, font size*/
 section q{
     font-family: cursive;
@@ -103,74 +109,77 @@ a:hover{
 
 /* Style for main navigation */
 
-.structural {
-    width: 100%;
-    background-color: rgb(255, 153, 0);
-    margin: 1rem 0;
-    float: inline-start;
-}
-
 nav {
-    padding: 10px;
-    text-align: center; /* Center the navigation links */
+    background-color: #f2f2f2; 
+    padding: 10px 10px; 
+    margin-top: 10px;
+    border: black solid 3px;
+    border-radius: 10px;
+    margin: 3px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav .container ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none; 
+    text-align: left; 
 }
 
-nav ul li {
-    display: inline-block; /* Display the list items inline */
-    position: relative;
-    width: 20%; /* Let the width adjust automatically based on content */
+nav .container ul li {
+    display: inline-block; 
+    margin-right: 20px; 
 }
 
-nav ul li a {
-    color: #333;
-    font-weight: 900;
-    text-decoration: none;
-    text-align: center;
+
+
+nav .container ul li a {
+    text-decoration: none; 
+    color: black; 
+    padding: 5px; 
+}
+
+nav .container ul li a:hover {
+    background-color: #ddd;
+    color: blue; 
+}
+
+/* Dropdown Menu Styling */
+nav .container ul li ul {
+    display: none; 
+    position: absolute; 
+    background-color: #f2f2f2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    width: 150px; 
+    padding: 0; 
+}
+
+nav .container ul li:hover ul {
     display: block;
-    padding: 10px 20px; /* Increase padding for spacing */
+    margin-top: 10px; 
 }
 
-/* Corrected styling for sub-menu */
-nav ul li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: blanchedalmond;
-    border: 1px solid #000;
-    z-index: 1000;
-    width: 100%;
-    text-align: center; /* Center the sub-menu links */
+nav .container ul li ul li {
+    display: block; 
+    text-align: center; 
+    margin: 0; 
 }
 
-nav ul li ul li {
-    width: 100%;
-}
-
-nav ul li ul li a {
-    padding: 10px;
+nav .container ul li ul li a {
     display: block;
 }
 
-nav ul li:hover > ul {
-    display: block;
+nav .container ul li ul li a:hover {
+    background-color: #ddd; 
+    color: blue; 
 }
 
-nav ul li a:hover {
-    color: cornflowerblue;
-}
 
 /*css for form elements*/
 
 .structural {
     width: 50%;
-    margin: 50px auto;
+    margin: 50px 50px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -211,6 +220,7 @@ caption {
     caption-side: top;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align:left;
 }
 
 th, td {
@@ -231,69 +241,72 @@ tbody tr:hover {
     background-color: #ddd;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px; /* Gap between images */
-    position: relative; /* Required for absolute positioning of clip art */
-  }
-  
-  .gallery figure {
-    margin: 0;
-    padding: 0;
-    position: relative; /* Required for absolute positioning of clip art */
-  }
-  
-  .gallery img {
-    width: 100%; /* Make images fill their respective grid cells */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-  }
-  
-  .gallery figcaption {
+/* CSS for Gallery */
+main.gallery{
+    width: 100%;
+}
+.gallery h2{
     text-align: center;
-    position: absolute; /* Position captions relative to their parent figures */
-    bottom: 0; /* Align captions to the bottom of the figure */
-    left: 0; /* Center captions horizontally */
-    width: 100%; /* Make captions span the entire width of the figure */
-    padding: 10px; /* Add some padding for better readability */
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
-  }
-  
-  /* Add clip art */
-  .gallery figure::after {
-    content: ""; /* Required for pseudo-elements */
-    position: absolute; /* Position the clip art absolutely */
-    top: 0; /* Position clip art at the top of the figure */
-    left: 0; /* Position clip art at the left of the figure */
-    width: 100%; /* Make clip art cover the entire figure */
-    height: 100%; /* Make clip art cover the entire figure */
-    background-image: url('clipart.png'); /* Replace 'clipart.png' with the path to your clip art image */
-    background-size: cover; /* Make clip art cover the entire space */
-    opacity: 0.3; /* Adjust opacity of clip art */
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    color:  rgba(128, 5, 5, 0.67);;
+    font-family: sans-serif;
+}
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.structural {
+.photos figure {
+    margin: 0;
+    position: relative;
+    flex: 0 0 calc(33.3333% - 20px); 
+    margin-bottom: 20px;
+}
+
+.photos img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+}
+
+.photos figcaption {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 6% 2%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(128, 5, 5, 0.67);
+    width: 96%;
+    display: block;
+}
+
+/* Clip-path for the first figure */
+.clip1 {
+    clip-path: polygon(1.11% 6.3%, 100% 0%, 99.66% 45.74%, 92.5% 97.97%, 1.94% 100.35%);
+}
+     
+
+.Media {
+    border: black dotted;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
 }
 
 .video {
-    width: 50%; /* Adjust as needed */
+    width: 100%; 
+    height: 100%;
 }
 
 .video iframe {
     width: 100%;
     height: 100%;
 }
+
 
 
 
