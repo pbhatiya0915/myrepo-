@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Name: Pratham Bhatiya-->
+<!--Email: pbhatiya0915@conestogac.on.ca-->
+
+<head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial scale=1.0">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="structural">
+        <header class="structural">
+            <h1>Contact</h1>
+        </header>
+        <nav class="structural">
+            <ul>
+                <li><a href="inclasstask5.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+        <main class="structural">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required autofocus>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <fieldset>
+                    <legend>What section of PROG1245 are you in?</legend>
+                    <label for="sec4">
+                    <input type="radio" id="sec4" name="sec" value="4" required checked> Section 4</label><br>
+                    <label for="sec5">
+                    <input type="radio" id="sec5" name="sec" value="5" required> Section 5</label><br>
+                    <label for="sec8">
+                    <input type="radio" id="sec8" name="sec" value="8" required> Section 8</label>
+                </fieldset>
+                <div>
+                    <label for="help">What do you need help with?</label>
+                    <select id="help" name="help" required>
+                        <option value="" disabled selected>Select option</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="Both">Both (HTML & CSS)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="human"><input type="checkbox" id="human" name="human" value="true" required> I am a human</label>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+        <aside class="structural">
+            <h2>External Links</h2>
+            <ul>
+                <li><a href="https://learning.linkedin.com/">Linkedin learning</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a></li>
+            </ul>
+        </aside>
+    </section>
+        <footer class="structural">
+            <p>&copy; Pratham Bhatiya 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+  
