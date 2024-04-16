@@ -164,7 +164,7 @@ figcaption {
     }
     
     #gallery {
-        grid-template-columns: autox;
+        grid-template-columns: auto;
     }
     
     body {
